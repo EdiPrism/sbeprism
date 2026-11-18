@@ -1,0 +1,47 @@
+name: Bug Report
+description: Report a FIX SBE XML, Nasdaq ITCH/OUCH, PCAP/PCAPNG wire decoding, or C++20/Rust codegen issue
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > **Trading Desk / Alpha Safety Warning:** **NEVER** paste or attach production `.pcap` captures, live `ClOrdID`s, firm account IDs, or confidential internal schemas into public GitHub issues. Use a minimal synthetic `<sbe:message>` snippet or run `Alt+Shift+R` (**Export Alpha-Scrubbed Test Fixture**) first.
+  - type: dropdown
+    id: ide
+    attributes:
+      label: JetBrains IDE
+      options:
+        - CLion
+        - RustRover
+        - IntelliJ IDEA (Unified / Community / Ultimate)
+        - Rider
+        - PyCharm
+        - DataGrip
+        - GoLand
+        - WebStorm
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: IDE Version & SbePrism Version
+      placeholder: "e.g., CLion 2025.3.1 • SbePrism v1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Steps to Reproduce & Synthetic Sample (SBE XML / Hex Frame)
+      placeholder: |
+        <sbe:message name="NewOrderSingle" id="1" blockLength="24">
+          <field name="clOrdId" id="11" type="uint64"/>
+        </sbe:message>
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs. Actual Behavior
+    validations:
+      required: true

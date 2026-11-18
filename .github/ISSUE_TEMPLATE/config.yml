@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: SbePrism Documentation & Wire Reference Guides
+    url: https://ediprism.github.io/
+    about: Browse 100% offline FIX SBE, Nasdaq ITCH 5.0, and binary wire documentation
+  - name: Air-Gap Security & Privacy Policy
+    url: https://ediprism.github.io/privacy.html
+    about: Review our strict zero-egress, zero-telemetry architecture guarantee

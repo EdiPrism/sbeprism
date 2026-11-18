@@ -1,0 +1,24 @@
+name: Feature Request
+description: Request an exchange wire dialect, packet framing header, or codegen target
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Enhancement Area
+      options:
+        - Exchange Wire Dialect (e.g., Eurex ETI, B3, iLink 3, Pillar)
+        - Packet Framing / Capture Format (PCAP, PCAPNG, MoldUDP64, SoupBinTCP, SOFH)
+        - Zero-Copy Codegen Target (C++20, Rust, Java/Kotlin, C#, Python)
+        - Schema Evolution Diff & Validation Rules
+        - Editor UI / Wire Matrix UX
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Workflow Problem & Desired Capability
+      placeholder: Describe the binary wire inspection or codegen workflow you want automated offline...
+    validations:
+      required: true
