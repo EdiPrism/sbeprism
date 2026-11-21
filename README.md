@@ -1,8 +1,9 @@
 # SbePrism SBE ITCH Viewer — Offline FIX SBE, Nasdaq ITCH/OUCH & PCAP Wire Inspector for JetBrains IDEs
 
-[![Portal](https://img.shields.io/badge/Docs_%26_Reference-ediprism.github.io-0284c7)](https://ediprism.github.io/)
+[![JetBrains Marketplace](https://img.shields.io/jetbrains/plugin/v/36273-sbeprism-sbe-itch-viewer?label=JetBrains_Marketplace_%2336273&color=087CFA)](https://plugins.jetbrains.com/plugin/36273-sbeprism-sbe-itch-viewer)
+[![Portal](https://img.shields.io/badge/Docs_%26_Reference-ediprism.github.io-0284c7)](https://ediprism.github.io/sbe/)
 [![Execution](https://img.shields.io/badge/Execution-100%25_Offline_%26_Air--Gapped-10B981)](https://ediprism.github.io/privacy.html)
-[![Platform](https://img.shields.io/badge/JetBrains_IDEs-2025.1%2B_(CLion_%2F_RustRover_%2F_IDEA_%2F_Rider_%2F_PyCharm)-087CFA)](https://ediprism.github.io/)
+[![Platform](https://img.shields.io/badge/JetBrains_IDEs-2025.1%2B_(CLion_%2F_RustRover_%2F_IDEA_%2F_Rider_%2F_PyCharm)-087CFA)](https://plugins.jetbrains.com/plugin/36273-sbeprism-sbe-itch-viewer)
 
 **Deterministic, 100% offline / air-gapped low-latency binary market-data and order-entry wire inspector for `FIX Simple Binary Encoding` (`<sbe:messageSchema>` XML / `.sbe`), `Nasdaq TotalView-ITCH 5.0 & OUCH 5.0` (`.itch`, `.ouch`), and raw packet captures (`.pcap`, `.pcapng`, `.sbedata`, `.sbehex`) featuring inline wire byte-offset pills, an interactive `64-bit Wire Word & Bitset Layout Matrix`, schema evolution validator, semantic `Ctrl+D` diff, zero-copy `C++20 / #[no_std] Rust` codec generator, and `HmacSHA256` firm/account scrubber across all JetBrains IDEs** (`CLion`, `RustRover`, `IntelliJ IDEA`, `Rider`, `PyCharm`, `DataGrip`, `GoLand`, `WebStorm`).
 
@@ -12,6 +13,13 @@ Built for HFT, quantitative trading, exchange matching-engine, smart-order-route
 - **Zero-Hijack XML Support:** Automatically activates on `<sbe:messageSchema>` `.xml` and `.sbe` files while leaving standard project XML (`pom.xml`, `logback.xml`, etc.) completely untouched.
 
 ![SbePrism 64-Bit Wire Matrix, ITCH/OUCH Catalog, Nanosecond PCAP Decoder, Evolution Diff & C++20/Rust Codegen](./assets/sbeprism-showcase.gif)
+
+---
+
+## Installation
+
+- **JetBrains Marketplace (`#36273`):** **[Install `SbePrism SBE ITCH Viewer` from JetBrains Marketplace ->](https://plugins.jetbrains.com/plugin/36273-sbeprism-sbe-itch-viewer)**
+- **Inside Any JetBrains IDE (`2025.1+`):** Open **Settings / Preferences** (`Ctrl+Alt+S` / `Cmd+,`) -> **Plugins** -> **Marketplace** -> search **`SbePrism SBE ITCH Viewer`** -> click **Install** (dynamic plugin — zero IDE restart required).
 
 ---
 
